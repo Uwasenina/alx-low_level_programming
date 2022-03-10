@@ -1,10 +1,9 @@
 #include<stdio.h>
 
 /**
+ * main - prints the phrase "Programming is like building a multilingual puzzel
  *
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * Return: 0 if exited properly, otherwise non-zero
  */
 int main(void)
 {
