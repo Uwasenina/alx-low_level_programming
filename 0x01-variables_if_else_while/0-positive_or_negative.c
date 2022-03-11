@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 /**
- * main - To check if a number is negative or positive
- *
+ * main - assigns a random number to int n everytime
+ * Description: tell if a number is positive,negative or zero
  * Return: 0 if it exited, otherwise non-zero
  */
 int main(void)
@@ -12,6 +12,7 @@ int main(void)
 	int n;
 
 	srand(time(0));
+
 	n =  rand() - RAND_MAX / 2;
 
 	if (n > 0) /* checking whether it is positive*/
