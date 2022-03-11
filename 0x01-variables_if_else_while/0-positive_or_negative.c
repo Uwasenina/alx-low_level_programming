@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * main - To check if a number is negative or positive
@@ -9,8 +11,9 @@ int main(void)
 {
 	int n;
 
-	printf("Enter the number to be checked\n");
-	scanf("%d", n);
+	srand(time(0));
+	n =  rand() - RAND_MAX / 2;
+
 	if (n > 0) /* checking whether it is positive*/
 	{
 		printf("%d is positive\n", n);
