@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include <stdlib>
+#include <unistd.h>
 /**
  * main - prints the paragraph in c
+ *
  * Return: 0 if exited proparly, otherwise non-zero
  */
 int main(void)
 {
-	write(STDOUT_FILENO, "and that piece of art is useful\" -Dora korpar, 2015-10-19\n", 59);
+	write(1, "and that piece of art is useful\" -Dora korpar, 2015-10-19\n", 59);
 	return (1);
 }
