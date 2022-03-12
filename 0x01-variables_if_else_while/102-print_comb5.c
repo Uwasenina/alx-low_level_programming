@@ -8,29 +8,21 @@
 int main(void)
 {
 	int i, j;
-	int a, b, c, d;
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < 99; i++)
 	{
-		a = i / 10;
-		b = i % 10;
-		for (j = 0; j < 100; j++)
+		for (j = i + 1; j < 100; j++)
 		{
-			c = j / 10;
-			d = j % 10;
-			if (a < c || (a == c && b < d))
-			{
-				putchar(a);
-				putchar(b);
-				putchar(' ');
-				putchar(c);
-				putchar(d);
-				if (!(a == 9 && b == 8))
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(' ');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+			if (i == 98 && i == 99)
+				break;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
