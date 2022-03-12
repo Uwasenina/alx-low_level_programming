@@ -9,7 +9,7 @@ int main(void)
 {
 	int digit1, digit2, digit3;
 
-	for (digit1 = 48; digi1 < 56; digit1++)
+	for (digit1 = 48; digit1 < 56; digit1++)
 	{
 		for (digit2 = digit1 + 1; digit2 < 57; digit2++)
 		{
