@@ -13,9 +13,7 @@ int main(void)
 	{
 		putchar(n);
 		if (n == 9)
-		{
 			continue;
-		}
 		putchar(',');
 		putchar(' ');
 	}
