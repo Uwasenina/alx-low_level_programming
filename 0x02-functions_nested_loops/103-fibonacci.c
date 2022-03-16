@@ -6,20 +6,20 @@
  */
 int main(void)
 {
-	unsigned long i = 0, j = 1, k;
-	long tot_sum;
+	unsigned long count, i, j, k, sum;
 
-	k = 0;
-	while (k <= 4000000)
+	i = sum = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
 		k = i + j;
 		i = j;
 		j = k;
-		if ((k % 2) == 0)
+		if (k % 2 == 0 && k < 4000000)
 		{
-			tot_sum += k;
+			sum += k;
 		}
 	}
-	printf("%ld", tot_sum);
+	printf("%lu\n", sum);
 	return (0);
 }
