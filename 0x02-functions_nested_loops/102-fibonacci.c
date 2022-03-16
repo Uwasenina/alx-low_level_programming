@@ -7,10 +7,8 @@
 int main(void)
 {
 	int n;
-	unsigned long i, j, k;
+	unsigned long i = 0, j = 1, k;
 
-	i = 0;
-	j = 1;
 	for (n = 0; n < 50; n++)
 	{
 		k = i + j;
