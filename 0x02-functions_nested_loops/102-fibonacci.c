@@ -12,7 +12,7 @@ int main(void)
 	for (n = 0; n < 50; n++)
 	{
 		k = i + j;
-		printf("%d", k);
+		printf("%ld", k);
 		i = j;
 		j = k;
 		if (n == 49)
