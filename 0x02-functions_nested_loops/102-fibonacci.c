@@ -12,12 +12,12 @@ int main(void)
 	for (n = 0; n < 50; n++)
 	{
 		k = i + j;
+		printf("%d", k);
 		i = j;
 		j = k;
-		printf("%d", k);
 		if (n == 49)
 		{
-			putchar('\n');
+			printf("\n");
 		}
 		else
 		{
