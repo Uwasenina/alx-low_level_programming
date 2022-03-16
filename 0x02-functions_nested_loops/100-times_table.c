@@ -2,7 +2,7 @@
 
 /**
  * times_table - print n times
- *
+ * @n: the multiplication table requested.
  * Return: Nothing
  */
 void print_times_table(int n)
@@ -42,10 +42,8 @@ void print_times_table(int n)
 					_putchar(a + '0');
 					_putchar(b + '0');
 				}
-				else
-				{
+				els
 					_putchar(b + '0');
-				}
 			}
 			_putchar('\n');
 		}
