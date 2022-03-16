@@ -7,7 +7,7 @@
 int main(void)
 {
 	unsigned long i = 0, j = 1, k;
-	long tot_sum = 0;
+	long tot_sum;
 
 	k = 0;
 	while (k <= 4000000)
@@ -17,7 +17,7 @@ int main(void)
 		j = k;
 		if ((k % 2) == 0)
 		{
-			tot_sum = tot_sum + k;
+			tot_sum += k;
 		}
 	}
 	printf("%ld", tot_sum);
