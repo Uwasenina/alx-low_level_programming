@@ -2,9 +2,10 @@
 
 /**
  * print_times_table - prints a certain group in multiplication table.
+ * @n: integer
  * Return: Nothing
  */
-void print_times_table(void)
+void print_times_table(int n)
 {
 	int i, j, k;
 
