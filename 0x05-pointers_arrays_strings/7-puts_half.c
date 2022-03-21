@@ -5,7 +5,7 @@
  * @str: character
  * Return: void
  */
-voit puts_half(char *str)
+void puts_half(char *str)
 {
 	int i = 0, n;
 

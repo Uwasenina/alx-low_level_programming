@@ -2,12 +2,12 @@
 #include "stdio.h"
 
 /**
- *print_arrays - print arrays
+ *print_array - print arrays
  *@a: array
  *@n: number of element
  *Return: void
  */
-void print_arrays(int *a, int n)
+void print_array(int *a, int n)
 {
 	int i;
 
