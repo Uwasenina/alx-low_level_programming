@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _atio - convert a string
+ * _atoi - convert a string
  * @s: array
  * Return: value
  */
-int _atio(char *s)
+int _atoi(char *s)
 {
 	int i = 0, sign = 1;
 	unsigned int num = 0;
