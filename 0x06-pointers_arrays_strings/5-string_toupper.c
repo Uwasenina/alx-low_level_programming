@@ -5,7 +5,7 @@
  * @p: the string will be modified
  * Return: value
  */
-char *string_toupper(char *)
+char *string_toupper(char *p)
 {
 	int i = 0;
 
