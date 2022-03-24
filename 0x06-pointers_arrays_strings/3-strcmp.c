@@ -26,19 +26,19 @@ int _strcmp(char *s1, char *s2)
 	{
 		lim = j;
 	}
-	while (c <= lim)
+	while (k <= lim)
 	{
-		if (s1[c] == s2[c])
+		if (s1[k] == s2[k])
 		{
-			c++;
+			k++;
 			continue;
 		}
 		else
 		{
-			r = s1[c] - s2[c];
+			r = s1[k] - s2[k];
 			break;
 		}
-		c++;
+		k++;
 	}
 	return (r);
 }
