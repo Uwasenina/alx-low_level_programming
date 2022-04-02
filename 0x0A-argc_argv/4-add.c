@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, l, sum;
+	int i, j, length, sum;
 	char *ptr;
 
 	if (argc < 2)
@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			ptr = argv[i];
-			l = strlen(ptr);
+			length = strlen(ptr);
 
-			for (j = 0; j < l; j++)
+			for (j = 0; j < length; j++)
 			{
 				if (isdigit(*(ptr + j)) == 0)
 				{
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 			}
 			sum += atoi(argv[i]);
 		}
-		printf("%d\n", sum;
+		printf("%d\n", sum);
 				}
 				return (0);
 				}
