@@ -30,7 +30,7 @@ char *str_concat(char *s1, char *s2)
 	if (concat == 0)
 		return (0);
 
-	for (k = 0, l = i; k < j, k++, l++)
+	for (k = 0, l = i; k < j; k++, l++)
 		*(concat + l) = *(s2 + k);
 
 	*(concat + l) = '\0';
