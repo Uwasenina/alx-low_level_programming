@@ -38,6 +38,12 @@ char *argstostr(int ac, char **av)
 			k++;
 			j++;
 		}
+		s[k] = '\n';
+
+		j = 0;
+		k++;
+		i++;
+	}
 
 		k++;
 		s[k] = '\0';
