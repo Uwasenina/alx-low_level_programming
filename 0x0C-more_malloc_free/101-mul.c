@@ -69,7 +69,7 @@ int check_for_digits(char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			if (av[i][j] < '0')
+			if (av[i][j] < '0' || av[i][j] > '9')
 				return (1);
 		}
 	}
