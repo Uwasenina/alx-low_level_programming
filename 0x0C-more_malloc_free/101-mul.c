@@ -123,7 +123,7 @@ int main(int argc, char *argv[])
 	init(p, ln - 1);
 	for (ti = l2 - 1, i = 0; ti >= 0; ti--, i++)
 	{
-		t = malloc(argv[2][ti], argv[1], l1 - 1, p, (l2 - 2) - i);
+		t = mul(argv[2][ti], argv[1], l1 - 1, p, (l2 - 2) - i);
 		if (t == NULL)
 		{
 			for (ti = 0; e[ti]; ti++)
