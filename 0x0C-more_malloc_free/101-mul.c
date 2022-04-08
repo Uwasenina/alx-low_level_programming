@@ -75,3 +75,18 @@ int check_for_digits(char **av)
 	}
 	return (0);
 }
+/**
+ * init - initialize a string
+ * @str: string to initialize
+ * @l: length of string
+ * Return: void
+ */
+void init(char *str, int l)
+{
+	int i;
+
+	for (i = 0; i < l; i++)
+		str[i] = '0';
+	str[i] = '\0';
+}
+
