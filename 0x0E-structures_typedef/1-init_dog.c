@@ -3,6 +3,7 @@
 
 /**
  * init_dog - functions that struct with pointer
+ * @d: pointer to the struct dog
  * @name: char
  * @age: float
  * @owner: char
