@@ -6,7 +6,7 @@
  * main - performs simple operations
  * @argc: number of argument passed
  * @argv: Name of array
- * Retur: Always 0
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	c = f(a, b);
-	printf("%d\n",c);
+	printf("%d\n", c);
 	return (0);
 }
