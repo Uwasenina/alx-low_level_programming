@@ -4,7 +4,7 @@
 #include <stddef.h>
 
 /* print to characters */
-int _putchar(int c);
+int _putchar(char c);
 /* function to print a name */
 void print_name(char *name, void (*f)(char *));
 
