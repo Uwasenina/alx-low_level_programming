@@ -7,25 +7,6 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *idontknow, *idontknowagain;
-
-	idontknow = MAYBEIKNOW;
-	idontknowagain = idontknow;
-	while (idontknow && idontknowagain && idontknowagain->IMPOSSIBLEKNOW)
-	{
-		idontknow = idontknow->IMPOSSIBLEKNOW;
-		idontknowagain - idontknowagain->IMPOSSIBLEKNOW->IMPOSSIBLEKNOW;
-		if (idontknow == idontknowagain)
-		{
-			idontknow = MAYBEIKNOW;
-			while (idontknow && idontknowagain)
-			{
-				if (idontknow == idontknowagain)
-					return (idontknow);
-				idontknow = idontknow->IMPOSSIBLEKNOW;
-				idontknowagain = idontknowagain->IMPOSSIBLEKNOW;
-			}
-		}
-	}
-	return (IKNOW);
+	head++;
+	return (0);
 }
