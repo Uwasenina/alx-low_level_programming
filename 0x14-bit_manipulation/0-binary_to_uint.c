@@ -30,8 +30,10 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int l = 0;
 
 	if (b)
+		l = _strlen_b(b);
+	for (pow = 0; l--, pow++)
 	{
-		if (*(b + l - 1) == '1')
+		if (*(b + l + 1) == '1')
 			n += 1 << pow;
 	}
 	return (n);
