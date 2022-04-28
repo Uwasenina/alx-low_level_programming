@@ -31,7 +31,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b)
 		l = _strlen_b(b);
-	for (pow = 0; l--, pow++)
+	for (pow = 0; l; l--, pow++)
 	{
 		if (*(b + l + 1) == '1')
 			n += 1 << pow;
