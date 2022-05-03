@@ -27,7 +27,7 @@ int main(int ac, char **av)
 	{
 		l_read = read(file_from, content, 1024);
 		if (l_read == -1)
-		{ dprintf(STDERR_FILENO, "Error: Can't read file %s\n");
+		{ dprintf(STDERR_FILENO, "Error: Can't read file %s\n", av[1]);
 			exit(98); }
 		l_write = write(file_to, content, l_read);
 		if (l_write == -1)
