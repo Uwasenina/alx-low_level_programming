@@ -31,6 +31,53 @@ void magic(unsigned char *e_ident)
 		printf("%02x ", *(e_ident + i));
 	printf("%02x\n", *(e_ident + i));
 }
+/**
+ * class - print the class of ELF
+ * @e_ident - the ELF struct
+ * Return: void
+ */
+void class(unsigned char *e_ident)
+{
+	printf("  Class:                                 ");
+	if (e_ident[EI_CLASS] == ELFCLASSNONE)
+		printf("This class is invalid\n");
+	else if (e_ident[EI_CLASS] == ELFCLASS32)
+		printf("ELF32\n");
+	else if (e_ident[EI_CLASS] == ELFCLASS64)
+		printf("ELF64\n");
+	else
+	        printf("<unknown: %x>\n", e_ident[EI_CLASS]);
+}
+/**
+ * data - print the type of data
+ * @e_ident: ELF struct
+ * Return: void
+ */
+void data(unsigned char *e_ident)
+{
+	printf("   Data                  ");
+	if (e_ident[EI_DATA] == ELFDATANONE)
+		printf("Unknown data format\n");
+	else if (e_ident[EI_DATA] == ELFDATA2LSB)
+		printf("2's complement, little endian\n");
+	else if (e_ident[EI_DATA] == ELFDATA2MSB)
+		printf("2's complement, big endian\n");
+	else
+		printf("<unknown: %x>\n", e_ident[EI_DATA]);
+}
+/**
+ * version - print the version of the file
+ * @e_ident - the ELF struct
+ * Return: void
+ */
+void version(unsigned char *e_ident)
+{
+	printf("  Version                         ");
+	if (e_ident[EI_VERSION] == EV_CURRENT)
+		printf("%i (current)\n", EV_CURRENT);
+	else
+		printf("%i\n", e_ident[EI_VERSION]);
+}
 
 /**
  * main - copies the content of a fioe
